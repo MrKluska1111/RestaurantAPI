@@ -168,3 +168,12 @@ C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\Resta
 C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\obj\Debug\net8.0\RestaurantAPI.sourcelink.json
 C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\nlog.config
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\NLog.dll
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\NLog.Extensions.Logging.dll
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\NLog.Web.AspNetCore.dll
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\obj\Debug\net8.0\RestaurantAPI.MvcApplicationPartsAssemblyInfo.cs

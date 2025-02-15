@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using RestaurantAPI.Entities;
+using RestaurantAPI.Exceptions;
 using RestaurantAPI.Models;
 
 namespace RestaurantAPI.Services
@@ -9,11 +10,13 @@ namespace RestaurantAPI.Services
     {
         private readonly RestaurantDbContext _dbContext;
         private readonly IMapper _mapper;
+        private readonly ILogger<RestaurantService> _logger;
 
-        public RestaurantService(RestaurantDbContext dbContext, IMapper mapper)
+        public RestaurantService(RestaurantDbContext dbContext, IMapper mapper, ILogger<RestaurantService> logger)
         {
             _dbContext = dbContext;
             _mapper = mapper;
+            _logger = logger;
         }
 
         public RestaurantDto GetById(int id)
@@ -26,7 +29,7 @@ namespace RestaurantAPI.Services
 
             if (restaurant is null)
             {
-                return null;
+                throw new NotFoundException("Restaurant not found");
             }
 
             var result = _mapper.Map<RestaurantDto>(restaurant);
@@ -55,23 +58,24 @@ namespace RestaurantAPI.Services
             return restaurant.Id;
         }
 
-        public bool Delete(int id)
+        public void Delete(int id)
         {
+            _logger.LogError($"Restaurant with id: {id} DELETE action invoke");
+
             var restaurant = _dbContext
                 .Restaurants
                 .FirstOrDefault(r => r.Id == id);
 
             if(restaurant is null)
             {
-                return false;
+                throw new NotFoundException("Restaurant not found");
             }
 
             _dbContext.Restaurants.Remove(restaurant);
             _dbContext.SaveChanges();
-            return true;
         }
 
-        public bool Update(int id, UpdateRestaurant updateRestaurant)
+        public void Update(int id, UpdateRestaurant updateRestaurant)
         {
             var restaurant = _dbContext
                 .Restaurants
@@ -79,7 +83,7 @@ namespace RestaurantAPI.Services
 
             if(restaurant is null)
             {
-                return false;
+                throw new NotFoundException("Restaurant not found");
             }
 
             restaurant.Name = updateRestaurant.Name;
@@ -88,7 +92,6 @@ namespace RestaurantAPI.Services
 
             //_dbContext.Restaurants.Update(restaurant);
             _dbContext.SaveChanges();
-            return true;
         }
     }
 }

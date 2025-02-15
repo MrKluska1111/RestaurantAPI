@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|c:\\users\\kamil\\desktop\\programowanie\\asp.net core\\tutorial z udemy\\projekt\\restaurantapi\\restaurantapi\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|solutionrelative:restaurantapi\\controllers\\restaurantcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|c:\\users\\kamil\\desktop\\programowanie\\asp.net core\\tutorial z udemy\\projekt\\restaurantapi\\restaurantapi\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|solutionrelative:restaurantapi\\nlog.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|c:\\users\\kamil\\desktop\\programowanie\\asp.net core\\tutorial z udemy\\projekt\\restaurantapi\\restaurantapi\\services\\restaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|solutionrelative:restaurantapi\\services\\restaurantservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|c:\\users\\kamil\\desktop\\programowanie\\asp.net core\\tutorial z udemy\\projekt\\restaurantapi\\restaurantapi\\middleware\\requesttimemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|solutionrelative:restaurantapi\\middleware\\requesttimemiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|c:\\users\\kamil\\desktop\\programowanie\\asp.net core\\tutorial z udemy\\projekt\\restaurantapi\\restaurantapi\\models\\updaterestaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|solutionrelative:restaurantapi\\models\\updaterestaurant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|c:\\users\\kamil\\desktop\\programowanie\\asp.net core\\tutorial z udemy\\projekt\\restaurantapi\\restaurantapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|solutionrelative:restaurantapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "nlog.config",
+              "DocumentMoniker": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\nlog.config",
+              "RelativeDocumentMoniker": "RestaurantAPI\\nlog.config",
+              "ToolTip": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\nlog.config",
+              "RelativeToolTip": "RestaurantAPI\\nlog.config",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-02-15T11:55:25.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "UpdateRestaurant.cs",
-              "DocumentMoniker": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Models\\UpdateRestaurant.cs",
-              "RelativeDocumentMoniker": "RestaurantAPI\\Models\\UpdateRestaurant.cs",
-              "ToolTip": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Models\\UpdateRestaurant.cs",
-              "RelativeToolTip": "RestaurantAPI\\Models\\UpdateRestaurant.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Program.cs",
+              "RelativeDocumentMoniker": "RestaurantAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Program.cs",
+              "RelativeToolTip": "RestaurantAPI\\Program.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwCcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T14:24:03.988Z",
+              "WhenOpened": "2025-02-15T11:54:04.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RestaurantService.cs",
-              "DocumentMoniker": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Services\\RestaurantService.cs",
-              "RelativeDocumentMoniker": "RestaurantAPI\\Services\\RestaurantService.cs",
-              "ToolTip": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Services\\RestaurantService.cs",
-              "RelativeToolTip": "RestaurantAPI\\Services\\RestaurantService.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAowFgAAAAOAAAAAAAAAA==",
+              "Title": "RequestTimeMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Middleware\\RequestTimeMiddleware.cs",
+              "RelativeDocumentMoniker": "RestaurantAPI\\Middleware\\RequestTimeMiddleware.cs",
+              "ToolTip": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Middleware\\RequestTimeMiddleware.cs",
+              "RelativeToolTip": "RestaurantAPI\\Middleware\\RequestTimeMiddleware.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T17:04:40.499Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RestaurantController.cs",
-              "DocumentMoniker": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Controllers\\RestaurantController.cs",
-              "RelativeDocumentMoniker": "RestaurantAPI\\Controllers\\RestaurantController.cs",
-              "ToolTip": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Controllers\\RestaurantController.cs",
-              "RelativeToolTip": "RestaurantAPI\\Controllers\\RestaurantController.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAwE8AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-12T11:11:21.416Z",
+              "WhenOpened": "2025-02-15T11:44:43.169Z",
               "EditorCaption": ""
             }
           ]
