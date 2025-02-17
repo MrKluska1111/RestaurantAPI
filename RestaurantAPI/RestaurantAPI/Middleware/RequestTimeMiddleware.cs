@@ -20,7 +20,7 @@ namespace RestaurantAPI.Middleware
             _stopwatch.Start();
 
             await next.Invoke(context);
-            Thread.Sleep(4000);
+            //Thread.Sleep(4000);
 
             _stopwatch.Stop();
 
