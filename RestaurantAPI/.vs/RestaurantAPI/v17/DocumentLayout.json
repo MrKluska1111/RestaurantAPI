@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|c:\\users\\kamil\\desktop\\programowanie\\asp.net core\\tutorial z udemy\\projekt\\restaurantapi\\restaurantapi\\controllers\\dishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|solutionrelative:restaurantapi\\controllers\\dishcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|c:\\users\\kamil\\desktop\\programowanie\\asp.net core\\tutorial z udemy\\projekt\\restaurantapi\\restaurantapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|solutionrelative:restaurantapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|c:\\users\\kamil\\desktop\\programowanie\\asp.net core\\tutorial z udemy\\projekt\\restaurantapi\\restaurantapi\\services\\dishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|solutionrelative:restaurantapi\\services\\dishservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|c:\\users\\kamil\\desktop\\programowanie\\asp.net core\\tutorial z udemy\\projekt\\restaurantapi\\restaurantapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|solutionrelative:restaurantapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|c:\\users\\kamil\\desktop\\programowanie\\asp.net core\\tutorial z udemy\\projekt\\restaurantapi\\restaurantapi\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42A195FB-0F03-4528-8670-DA32FCA4F01E}|RestaurantAPI\\RestaurantAPI.csproj|solutionrelative:restaurantapi\\services\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DishService.cs",
-              "DocumentMoniker": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Services\\DishService.cs",
-              "RelativeDocumentMoniker": "RestaurantAPI\\Services\\DishService.cs",
-              "ToolTip": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Services\\DishService.cs",
-              "RelativeToolTip": "RestaurantAPI\\Services\\DishService.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAkwFwAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Program.cs",
+              "RelativeDocumentMoniker": "RestaurantAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Program.cs",
+              "RelativeToolTip": "RestaurantAPI\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB4AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T15:25:56.15Z",
+              "WhenOpened": "2025-02-21T13:39:23.757Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DishController.cs",
-              "DocumentMoniker": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Controllers\\DishController.cs",
-              "RelativeDocumentMoniker": "RestaurantAPI\\Controllers\\DishController.cs",
-              "ToolTip": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Controllers\\DishController.cs",
-              "RelativeToolTip": "RestaurantAPI\\Controllers\\DishController.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAA3wC4AAAAfAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AccountService.cs",
+              "DocumentMoniker": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Services\\AccountService.cs",
+              "RelativeDocumentMoniker": "RestaurantAPI\\Services\\AccountService.cs",
+              "ToolTip": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Services\\AccountService.cs",
+              "RelativeToolTip": "RestaurantAPI\\Services\\AccountService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAewBcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T15:16:28.447Z",
+              "WhenOpened": "2025-02-21T13:06:47.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "RestaurantAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\kamil\\Desktop\\Programowanie\\Asp.net Core\\Tutorial z udemy\\Projekt\\RestaurantAPI\\RestaurantAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "RestaurantAPI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAnwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T13:02:45.491Z",
               "EditorCaption": ""
             }
           ]

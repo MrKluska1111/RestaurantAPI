@@ -13,10 +13,13 @@ namespace RestaurantAPI.Controllers
     public class RestaurantController : ControllerBase
     {
         private readonly IRestaurantService _restaurantService;
+        private readonly RestaurantSeeder _seeder;
 
-        public RestaurantController(IRestaurantService restaurantService)
+        public RestaurantController(IRestaurantService restaurantService, RestaurantSeeder seeder)
         {
             _restaurantService = restaurantService;
+            _seeder = seeder;
+            _seeder.Seed();
         }
 
         [HttpPost]
