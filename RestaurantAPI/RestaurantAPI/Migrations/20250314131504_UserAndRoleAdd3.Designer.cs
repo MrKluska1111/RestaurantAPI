@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RestaurantAPI.Entities;
 
@@ -11,9 +12,11 @@ using RestaurantAPI.Entities;
 namespace RestaurantAPI.Migrations
 {
     [DbContext(typeof(RestaurantDbContext))]
-    partial class RestaurantDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250314131504_UserAndRoleAdd3")]
+    partial class UserAndRoleAdd3
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -101,9 +104,6 @@ namespace RestaurantAPI.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("CreatedById")
-                        .HasColumnType("int");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -120,8 +120,6 @@ namespace RestaurantAPI.Migrations
 
                     b.HasIndex("AddressId")
                         .IsUnique();
-
-                    b.HasIndex("CreatedById");
 
                     b.ToTable("Restaurants");
                 });
@@ -199,13 +197,7 @@ namespace RestaurantAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("RestaurantAPI.Entities.User", "CreatedBy")
-                        .WithMany()
-                        .HasForeignKey("CreatedById");
-
                     b.Navigation("Address");
-
-                    b.Navigation("CreatedBy");
                 });
 
             modelBuilder.Entity("RestaurantAPI.Entities.User", b =>

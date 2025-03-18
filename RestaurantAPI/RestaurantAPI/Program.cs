@@ -13,6 +13,8 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.Extensions.Configuration;
+using RestaurantAPI.Authorization;
+using Microsoft.AspNetCore.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,6 +23,16 @@ var authenticationSettings = new AuthenticationSettings();
 builder.Configuration.GetSection("Authentication").Bind(authenticationSettings);
 builder.Services.AddSingleton(authenticationSettings);
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("HasNationality", builder => builder.RequireClaim("Nationality"));
+    options.AddPolicy("AtLeast20", builder => builder.AddRequirements(new MinimumAgeRequirement(20)));
+    options.AddPolicy("2CreatedRestaurants", builder => builder.AddRequirements(new CreatedRestaurantsRequirement(2)));
+});
+
+builder.Services.AddScoped<IAuthorizationHandler, MinimumAgeRequirementHandler>();
+builder.Services.AddScoped<IAuthorizationHandler, ResourceOperationRequirementHandler>();
+builder.Services.AddScoped<IAuthorizationHandler, CreatedRestaurantRequirementHandler>();
 
 builder.Services.AddControllers().AddFluentValidation();
 builder.Services.AddDbContext<RestaurantDbContext>();
@@ -42,7 +54,7 @@ builder.Services.AddAuthentication(option =>
     cfg.TokenValidationParameters = new TokenValidationParameters
     {
         ValidIssuer = authenticationSettings.JwtIssuer,
-        ValidateAudience = true,
+        ValidateAudience = false,
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(authenticationSettings.JwtKey)),
     };
 });
@@ -61,8 +73,6 @@ var app = builder.Build();
 app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseMiddleware<RequestTimeMiddleware>();
 
-app.UseAuthentication();
-
 app.UseHttpsRedirection();
 
 app.UseSwagger();
@@ -71,7 +81,10 @@ app.UseSwaggerUI(c =>
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Restaurant API");
 });
 
-//app.UseAuthorization();
+app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

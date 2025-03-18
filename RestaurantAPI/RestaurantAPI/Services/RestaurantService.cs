@@ -1,8 +1,11 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
+using RestaurantAPI.Authorization;
 using RestaurantAPI.Entities;
 using RestaurantAPI.Exceptions;
 using RestaurantAPI.Models;
+using System.Security.Claims;
 
 namespace RestaurantAPI.Services
 {
@@ -11,12 +14,15 @@ namespace RestaurantAPI.Services
         private readonly RestaurantDbContext _dbContext;
         private readonly IMapper _mapper;
         private readonly ILogger<RestaurantService> _logger;
+        private readonly IAuthorizationService _authorizationService;
 
-        public RestaurantService(RestaurantDbContext dbContext, IMapper mapper, ILogger<RestaurantService> logger)
+        public RestaurantService(RestaurantDbContext dbContext, IMapper mapper, ILogger<RestaurantService> logger, 
+            IAuthorizationService authorizationService)
         {
             _dbContext = dbContext;
             _mapper = mapper;
             _logger = logger;
+            _authorizationService = authorizationService;
         }
 
         public RestaurantDto GetById(int id)
@@ -48,9 +54,10 @@ namespace RestaurantAPI.Services
             return restaurantsDtos;
         }
 
-        public int Create(CreateRestaurantDto dto)
+        public int Create(CreateRestaurantDto dto, int userId)
         {
             var restaurant = _mapper.Map<Restaurant>(dto);
+            restaurant.CreatedById = userId;
 
             _dbContext.Restaurants.Add(restaurant);
             _dbContext.SaveChanges();
@@ -58,7 +65,7 @@ namespace RestaurantAPI.Services
             return restaurant.Id;
         }
 
-        public void Delete(int id)
+        public void Delete(int id, ClaimsPrincipal user)
         {
             _logger.LogError($"Restaurant with id: {id} DELETE action invoke");
 
@@ -71,11 +78,19 @@ namespace RestaurantAPI.Services
                 throw new NotFoundException("Restaurant not found");
             }
 
+            var authorizationResult = _authorizationService.AuthorizeAsync(user, restaurant,
+            new ResourceOperationRequirement(ResourceOperation.Delete)).Result;
+
+            if (!authorizationResult.Succeeded)
+            {
+                throw new ForbidException();
+            }
+
             _dbContext.Restaurants.Remove(restaurant);
             _dbContext.SaveChanges();
         }
 
-        public void Update(int id, UpdateRestaurant updateRestaurant)
+        public void Update(int id, UpdateRestaurant updateRestaurant, ClaimsPrincipal user)
         {
             var restaurant = _dbContext
                 .Restaurants
@@ -89,6 +104,14 @@ namespace RestaurantAPI.Services
             restaurant.Name = updateRestaurant.Name;
             restaurant.Description = updateRestaurant.Description;
             restaurant.HasDelivery = updateRestaurant.HasDelivery;
+
+            var authorizationResult = _authorizationService.AuthorizeAsync(user, restaurant, 
+                new ResourceOperationRequirement(ResourceOperation.Update)).Result;
+
+            if(!authorizationResult.Succeeded)
+            {
+                throw new ForbidException();
+            }
 
             //_dbContext.Restaurants.Update(restaurant);
             _dbContext.SaveChanges();
