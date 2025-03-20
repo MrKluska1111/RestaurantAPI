@@ -37,10 +37,10 @@ namespace RestaurantAPI.Controllers
 
         [HttpGet]
         //[Authorize(Roles = "Admin,Manager")]
-        [Authorize(Policy = "2CreatedRestaurants")]
-        public ActionResult<IEnumerable<RestaurantDto>> GetAll()
+        //[Authorize(Policy = "2CreatedRestaurants")]
+        public ActionResult<IEnumerable<RestaurantDto>> GetAll([FromQuery]RestaurantQuery query)
         {
-            var restaurantsDtos = _restaurantService.GetAll();
+            var restaurantsDtos = _restaurantService.GetAll(query);
 
             return Ok(restaurantsDtos);
         }
