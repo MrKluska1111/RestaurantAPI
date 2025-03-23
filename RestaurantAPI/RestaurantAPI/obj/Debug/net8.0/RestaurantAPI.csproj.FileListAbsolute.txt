@@ -182,3 +182,7 @@ C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\Resta
 C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\FluentAssertions.dll
 C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\Microsoft.Extensions.WebEncoders.dll
+C:\Users\kamil\Desktop\Programowanie\Asp.net Core\Tutorial z udemy\Projekt\RestaurantAPI\RestaurantAPI\bin\Debug\net8.0\RestaurantAPI.staticwebassets.runtime.json
